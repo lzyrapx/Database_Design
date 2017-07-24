@@ -1,0 +1,2297 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Database.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Database.ico"
+IDR_DATABATYPE          ICON    DISCARDABLE     "res\\DatabaseDoc.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\mainFrame.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP_BG           BITMAP  DISCARDABLE     "res\\background.bmp"
+IDB_BITMAP_LOGIN        BITMAP  DISCARDABLE     "res\\login.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  48, 48
+BEGIN
+    BUTTON      ID_SYS_USERSETTING
+    BUTTON      ID_SYS_RELOAD
+    BUTTON      ID_INF_EDUCATION
+    SEPARATOR
+    BUTTON      ID_INF_TECHNICAL
+    BUTTON      ID_ORG_DEPT
+    SEPARATOR
+    BUTTON      ID_ORG_SECTION
+    SEPARATOR
+    BUTTON      ID_HUMAN_BROWSE
+    SEPARATOR
+    BUTTON      ID_HUMAN_QUERY
+    BUTTON      ID_HUMAN_STATISTICS
+    BUTTON      ID_TOOL_NOTES
+    SEPARATOR
+    BUTTON      ID_TOOL_CONTACTS
+    BUTTON      ID_TOOL_MEETING
+    SEPARATOR
+    BUTTON      32801
+    BUTTON      32802
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 Database(&A)...",        ID_APP_ABOUT
+    END
+END
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "系统设置"
+    BEGIN
+        MENUITEM "用户设置",                    ID_SYS_USERSETTING
+        MENUITEM SEPARATOR
+        MENUITEM "数据库备份",                  ID_SYS_DBBACKUP
+        MENUITEM "数据库恢复",                  ID_SYS_DBRECOVER
+        MENUITEM SEPARATOR
+        MENUITEM "重新登录",                    ID_SYS_RELOAD
+        MENUITEM "退出系统",                    ID_SYS_EXIT
+    END
+    POPUP "基础数据信息"
+    BEGIN
+        MENUITEM "民族信息",                    ID_INF_NATION
+        MENUITEM "教工岗位",                    ID_INF_POSITION
+        MENUITEM "文化程度",                    ID_INF_EDUCATION
+        MENUITEM "政治面貌",                    ID_INF_POLITICAL
+        MENUITEM "院系部门",                    ID_INF_DEPT
+        MENUITEM "工资等级",                    ID_INF_WAGE
+        MENUITEM "职称类别",                    ID_INF_TECHNICAL
+        MENUITEM "行政职务",                    ID_INF_ADMIN
+    END
+    POPUP "组织机构信息"
+    BEGIN
+        MENUITEM "教学院系",                    ID_ORG_DEPT
+        MENUITEM "管理部门",                    ID_ORG_SECTION
+        MENUITEM "教辅部门",                    ID_ORG_AUXILIARY
+        MENUITEM "附属单位",                    ID_ORG_APPENDANT
+        MENUITEM "专职单位",                    ID_ORG_FULLTIME
+    END
+    POPUP "人事档案管理"
+    BEGIN
+        MENUITEM "人事档案浏览",                ID_HUMAN_BROWSE
+        MENUITEM "人事档案查询",                ID_HUMAN_QUERY
+        MENUITEM "人事档案统计",                ID_HUMAN_STATISTICS
+    END
+    POPUP "系统工具"
+    BEGIN
+        MENUITEM "记事本",                      ID_TOOL_NOTES
+        MENUITEM "通讯簿",                      ID_TOOL_CONTACTS
+        MENUITEM "会议纪要",                    ID_TOOL_MEETING
+    END
+    MENUITEM "",                            65535
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于Database",                ID_HELP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "帮助文档",                    ID_HELP_DOCUMENT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 302, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Database"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "高校人事信息数据库应用系统 1.0",IDC_STATIC,66,25,136,8,
+                    SS_NOPREFIX
+    LTEXT           "版权归教材编写者所有 (C) 2017",IDC_STATIC,92,47,124,8
+    DEFPUSHBUTTON   "确定",IDOK,239,70,50,14,WS_GROUP
+END
+
+IDD_DIALOG_LOGIN DIALOG DISCARDABLE  0, 0, 248, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户登录"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,63,121,56,14
+    PUSHBUTTON      "退出",IDCANCEL,142,121,58,15
+    CONTROL         133,IDC_STATIC,"Static",SS_BITMAP | WS_BORDER,15,15,87,
+                    87
+    LTEXT           "用户名：",IDC_STATIC,110,39,33,8
+    LTEXT           "密  码：",IDC_STATIC,110,62,33,8
+    COMBOBOX        IDC_COMBO_USER,148,37,80,72,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PASSWORD,149,59,79,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "注意:为了美观，登录后请全屏使用！",IDC_STATIC,70,151,
+                    128,16
+END
+
+IDD_DIALOG_USERSETTING DIALOG DISCARDABLE  0, 0, 351, 225
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户设置"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,225,191,50,14
+    PUSHBUTTON      "退出",IDCANCEL,284,191,50,14
+    GROUPBOX        "用户列表",IDC_STATIC,7,7,130,211
+    GROUPBOX        "设置密码",IDC_STATIC,214,7,130,211
+    PUSHBUTTON      "新增",IDC_BUTTON_ADD,149,33,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,150,67,50,14
+    PUSHBUTTON      "退出",IDC_BUTTON_CANCEL,150,197,50,14
+    CONTROL         "List1",IDC_LIST_USERLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,29,128,189
+    EDITTEXT        IDC_EDIT_USERNAME,265,31,72,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT_PASSWORD,265,58,72,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONFIRM,265,85,71,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "用 户 名：",IDC_STATIC,219,33,41,8
+    LTEXT           "密    码：",IDC_STATIC,219,60,41,8
+    LTEXT           "密码确认：",IDC_STATIC,219,88,41,8
+    CONTROL         "是否拥有最高访问权限",IDC_CHECK_AUTHORITY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,232,141,96,10
+END
+
+IDD_DIALOG_COMMON DIALOG DISCARDABLE  0, 0, 255, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加基础数据信息"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,69,154,50,14
+    PUSHBUTTON      "取消",IDCANCEL,139,153,50,14
+    GROUPBOX        "Static",IDC_STATIC_ADD,14,13,228,111
+    LTEXT           "Static",IDC_STATIC_INFORMATION,41,36,25,8
+    LTEXT           "描述：",IDC_STATIC,41,64,25,8
+    EDITTEXT        IDC_EDIT_DATA,78,34,138,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DESCRIPTION,78,61,138,51,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_NATIONINFORMATION DIALOG DISCARDABLE  0, 0, 216, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "民族信息"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,149,182,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,149,107,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,149,133,50,14
+    LTEXT           "说明：              中国籍教职工直接输入民族， 外籍教职工请在民族后面标识国籍，如：犹太-德国。",
+                    IDC_STATIC,146,31,63,59
+    CONTROL         "List1",IDC_LIST_NATIONINFORMATION,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,124,199
+END
+
+IDD_DIALOG_POSITIONINFORMATION DIALOG DISCARDABLE  0, 0, 261, 243
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "教工岗位"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,197,210,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,197,125,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,197,151,50,14
+    LTEXT           "说明：                按编制岗位分：行政干部、专任教师、工勤（司机、保安、食堂等）、临时工、离退休干部、离退休工人、其他（农场、工人、附中、托儿所等）。",
+                    IDC_STATIC,185,21,69,83
+    CONTROL         "List1",IDC_LIST_POSITIONINFORMATON,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,162,229
+END
+
+IDD_DIALOG_EDUCATIONDEGREE DIALOG DISCARDABLE  0, 0, 262, 249
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文化程度"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,199,208,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,199,123,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,199,151,50,14
+    LTEXT           "说明：                文化程度是指毕业学历，如博士，是指具有博士学位的教职员工，而在读博士或者博士未毕业，只能填写硕士或其它学位，等同学历不计。",
+                    IDC_STATIC,187,19,68,83
+    CONTROL         "List1",IDC_LIST_EDUCATIONDEGREE,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,160,235
+END
+
+IDD_DIALOG_POLITICALSTATUS DIALOG DISCARDABLE  0, 0, 264, 251
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "政治面貌"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,201,211,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,201,118,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,201,144,50,14
+    LTEXT           "说明：              中共党员简写为党员，国外党派人士注明国籍，如共和党-美国。",
+                    IDC_STATIC,191,33,60,53
+    CONTROL         "List1",IDC_LIST_POLITICALSTATUS,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,168,237
+END
+
+IDD_DIALOG_DEPARTMENTSECTION DIALOG DISCARDABLE  0, 0, 263, 249
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "院系部门"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,200,209,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,200,123,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,200,149,50,14
+    LTEXT           "说明：              院系部门指各二级学院与职能部门，如：软件学院、人事处等。",
+                    IDC_STATIC,196,37,60,50
+    CONTROL         "List1",IDC_LIST_DEPARTMENTSECTION,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,174,235
+END
+
+IDD_DIALOG_WAGELEVEL DIALOG DISCARDABLE  0, 0, 263, 251
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工资等级"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,200,209,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,200,124,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,200,149,50,14
+    LTEXT           "说明：             教职员工的工资等级按照相应的岗位等级区分，如：教授一级、副教授七级等。",
+                    IDC_STATIC,197,28,59,59
+    CONTROL         "List1",IDC_LIST_WAGELEVEL,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,173,237
+END
+
+IDD_DIALOG_TECHNICALPOST DIALOG DISCARDABLE  0, 0, 263, 249
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "职称类别"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,200,209,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,200,119,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,200,145,50,14
+    LTEXT           "说明：                职称类别按照教学系列、研究系列、实验系列与工勤系列填写，行政人员若无以上职称，则填写其他。",
+                    IDC_STATIC,188,25,68,64
+    CONTROL         "List1",IDC_LIST_TECHNICALPOST,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,166,235
+END
+
+IDD_DIALOG_ADMINISTRATIVEPOST DIALOG DISCARDABLE  0, 0, 263, 251
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "行政职务"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,200,210,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,200,126,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,200,152,50,14
+    LTEXT           "说明：             二级院系的院长、主任以及辅导员也属于行政职务。",
+                    IDC_STATIC,197,36,59,56
+    CONTROL         "List1",IDC_LIST_ADMINISTRATIVEPOST,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,171,237
+END
+
+IDD_DIALOG_DEPARTMENT DIALOG DISCARDABLE  0, 0, 347, 357
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "教学院系"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,193,221,50,14
+    GROUPBOX        "教学院系详细信息",IDC_STATIC,7,7,333,169
+    GROUPBOX        "查询",IDC_STATIC,7,181,333,61
+    LTEXT           "院系编码：",IDC_STATIC,21,24,41,8
+    LTEXT           "院系领导：",IDC_STATIC,21,43,41,8
+    LTEXT           "机构设置：",IDC_STATIC,21,64,41,8
+    LTEXT           "教学工作：",IDC_STATIC,21,85,41,8
+    LTEXT           "科研工作：",IDC_STATIC,21,108,41,8
+    LTEXT           "学生工作：",IDC_STATIC,21,129,41,8
+    LTEXT           "院系名称：",IDC_STATIC,175,22,41,8
+    LTEXT           "办公地点：",IDC_STATIC,176,43,41,8
+    EDITTEXT        IDC_EDIT_CODE,65,21,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOCATION,219,41,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SETTING,65,62,263,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TEACHING,65,83,263,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RESEARCHING,65,105,264,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STUDENT,65,127,263,14,ES_AUTOHSCROLL
+    LTEXT           "院系编码：",IDC_STATIC,21,24,41,8
+    COMBOBOX        IDC_COMBO_LEADER,65,42,96,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NAME,219,20,110,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,41,151,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,112,151,50,14,WS_DISABLED
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,183,151,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,255,151,50,14
+    LTEXT           "查询条件：",IDC_STATIC,21,199,41,8
+    LTEXT           "查询内容：",IDC_STATIC,176,199,41,8
+    COMBOBOX        IDC_COMBO_CONDITION,65,197,95,49,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTENT,219,197,110,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,94,221,50,14
+    CONTROL         "List1",IDC_LIST_DEPARTMENT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,251,333,99
+END
+
+IDD_DIALOG_SECTION DIALOG DISCARDABLE  0, 0, 347, 357
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "管理部门"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,200,221,50,14
+    GROUPBOX        "管理部门详细信息",IDC_STATIC,7,7,333,169
+    GROUPBOX        "查询",IDC_STATIC,7,181,333,61
+    LTEXT           "部门编码：",IDC_STATIC,22,24,41,8
+    LTEXT           "部门领导：",IDC_STATIC,22,45,41,8
+    LTEXT           "组织机构：",IDC_STATIC,22,67,41,8
+    LTEXT           "规章制度：",IDC_STATIC,22,88,41,8
+    LTEXT           "部门名称：",IDC_STATIC,179,24,41,8
+    LTEXT           "办公地点：",IDC_STATIC,179,45,41,8
+    EDITTEXT        IDC_EDIT_CODE,69,21,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOCATION,225,43,103,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SETTING,69,64,259,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RULE,69,85,259,62,ES_MULTILINE | ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_NAME,225,21,103,49,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LEADER,69,43,98,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,38,155,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,110,155,50,14,WS_DISABLED
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,185,155,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,259,155,50,14
+    LTEXT           "查询条件：",IDC_STATIC,22,199,41,8
+    LTEXT           "查询内容：",IDC_STATIC,179,199,41,8
+    COMBOBOX        IDC_COMBO_CONDITION,69,197,97,53,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTENT,225,197,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,100,221,50,14
+    CONTROL         "List1",IDC_LIST_SECTION,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,250,333,100
+END
+
+IDD_DIALOG_AUXILIARY DIALOG DISCARDABLE  0, 0, 347, 359
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "教辅部门"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,202,221,50,14
+    GROUPBOX        "教辅部门详细信息",IDC_STATIC,7,7,333,169
+    GROUPBOX        "查询",IDC_STATIC,7,181,333,62
+    LTEXT           "部门编号：",IDC_STATIC,23,25,41,8
+    LTEXT           "部门领导：",IDC_STATIC,23,47,41,8
+    LTEXT           "组织机构：",IDC_STATIC,23,68,41,8
+    LTEXT           "岗位职责：",IDC_STATIC,23,89,41,8
+    LTEXT           "部门名称：",IDC_STATIC,180,25,41,8
+    LTEXT           "办公地点：",IDC_STATIC,180,47,41,8
+    EDITTEXT        IDC_EDIT_CODE,71,23,98,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOCATION,226,44,101,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_LEADER,71,45,98,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NAME,226,23,101,58,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SETTING,71,65,256,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DUTY,71,87,256,62,ES_MULTILINE | ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,35,156,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,108,156,50,14,WS_DISABLED
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,183,156,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,258,156,50,14
+    LTEXT           "查询条件：",IDC_STATIC,23,199,41,8
+    LTEXT           "查询内容：",IDC_STATIC,180,199,41,8
+    COMBOBOX        IDC_COMBO_CONDITION,71,197,97,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTENT,226,197,103,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,101,221,50,14
+    CONTROL         "List1",IDC_LIST_AUXILIARY,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,251,333,101
+END
+
+IDD_DIALOG_APPENDANT DIALOG DISCARDABLE  0, 0, 347, 359
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "附属单位"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,201,221,50,14
+    GROUPBOX        "附属单位详细信息",IDC_STATIC,7,7,333,169
+    GROUPBOX        "查询",IDC_STATIC,7,181,333,62
+    LTEXT           "单位编号：",IDC_STATIC,24,26,41,8
+    LTEXT           "单位领导：",IDC_STATIC,24,47,41,8
+    LTEXT           "组织机构：",IDC_STATIC,24,69,41,8
+    LTEXT           "规章制度：",IDC_STATIC,24,91,41,8
+    LTEXT           "单位名称：",IDC_STATIC,184,26,41,8
+    LTEXT           "办公地点：",IDC_STATIC,184,47,41,8
+    EDITTEXT        IDC_EDIT_CODE,69,24,105,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOCATION,231,45,98,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SETTING,69,67,259,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REGULATION,69,89,259,58,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_LEADER,69,46,105,55,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NAME,231,23,97,57,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,35,155,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,108,155,50,14,WS_DISABLED
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,183,155,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,259,155,50,14
+    LTEXT           "查询条件：",IDC_STATIC,24,200,41,8
+    LTEXT           "查询内容：",IDC_STATIC,184,200,41,8
+    COMBOBOX        IDC_COMBO_CONDITION,69,198,102,55,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTENT,231,198,96,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,97,221,50,14
+    CONTROL         "List1",IDC_LIST_APPENDANT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,251,333,101
+END
+
+IDD_DIALOG_FULLTIME DIALOG DISCARDABLE  0, 0, 347, 357
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "专职机构"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,204,221,50,14
+    GROUPBOX        "专职机构详细信息",IDC_STATIC,7,7,333,169
+    GROUPBOX        "查询",IDC_STATIC,7,181,333,61
+    LTEXT           "机构编码：",IDC_STATIC,23,26,41,8
+    LTEXT           "机构领导：",IDC_STATIC,23,47,41,8
+    LTEXT           "机构设置：",IDC_STATIC,23,69,41,8
+    LTEXT           "科研成果：",IDC_STATIC,23,89,41,8
+    LTEXT           "机构名称：",IDC_STATIC,182,27,41,8
+    LTEXT           "办公地点：",IDC_STATIC,182,47,41,8
+    EDITTEXT        IDC_EDIT_CODE,71,24,101,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOCATION,229,45,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SETTING,71,67,257,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FRUIT,71,87,257,60,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_LEADER,71,45,101,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_NAME,229,25,98,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,37,155,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,111,155,50,14,WS_DISABLED
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,184,155,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,257,155,50,14
+    LTEXT           "查询条件：",IDC_STATIC,23,200,41,8
+    LTEXT           "查询内容：",IDC_STATIC,182,200,41,8
+    COMBOBOX        IDC_COMBO_CONDITION,71,198,99,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTENT,229,197,98,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,99,221,50,14
+    CONTROL         "List1",IDC_LIST_FULLTIME,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,250,333,100
+END
+
+IDD_HUMAN_HBASEARCHIVE DIALOG DISCARDABLE  0, 0, 487, 248
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "职工编号：",IDC_STATIC,25,21,41,8
+    LTEXT           "生    日：",IDC_STATIC,25,45,41,8
+    LTEXT           "政治面貌：",IDC_STATIC,25,69,41,8
+    LTEXT           "参加工作时间：",IDC_STATIC,25,93,57,8
+    LTEXT           "入职时间：",IDC_STATIC,25,119,41,8
+    LTEXT           "院系部门：",IDC_STATIC,25,144,41,8
+    LTEXT           "办公电话：",IDC_STATIC,25,167,41,8
+    LTEXT           "毕业学校：",IDC_STATIC,25,192,41,8
+    LTEXT           "家庭住址：",IDC_STATIC,25,216,41,8
+    LTEXT           "姓    名：",IDC_STATIC,176,21,41,8
+    LTEXT           "婚姻状况：",IDC_STATIC,176,45,41,8
+    LTEXT           "民    族：",IDC_STATIC,176,69,41,8
+    LTEXT           "教工岗位：",IDC_STATIC,176,93,41,8
+    LTEXT           "工资等级：",IDC_STATIC,176,119,41,8
+    LTEXT           "职    称：",IDC_STATIC,176,144,41,8
+    LTEXT           "手    机：",IDC_STATIC,176,167,41,8
+    LTEXT           "所学专业：",IDC_STATIC,176,192,41,8
+    LTEXT           "性    别：",IDC_STATIC,328,21,41,8
+    LTEXT           "年    龄：",IDC_STATIC,328,45,41,8
+    LTEXT           "身份证号：",IDC_STATIC,328,69,41,8
+    LTEXT           "籍    贯：",IDC_STATIC,328,93,41,8
+    LTEXT           "文化程度：",IDC_STATIC,328,119,41,8
+    LTEXT           "职    务：",IDC_STATIC,328,144,41,8
+    LTEXT           "电子邮箱：",IDC_STATIC,328,167,41,8
+    LTEXT           "毕业时间：",IDC_STATIC,328,192,41,8
+    EDITTEXT        IDC_EDIT_CODE,68,19,99,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_NAME,219,19,99,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SEX,371,19,100,48,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER_BIRTH,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,68,42,100,15
+    COMBOBOX        IDC_COMBO_MARRYIAGE,219,44,100,49,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_AGE,371,44,99,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_PARTY,68,67,100,65,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_RACE,219,67,99,63,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CID,371,67,99,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker3",IDC_DATETIMEPICKER_WORK,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,83,90,85,15
+    COMBOBOX        IDC_COMBO_POST,219,91,99,85,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_NATIVE,371,91,98,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_ENTRY,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,68,115,100,15
+    COMBOBOX        IDC_COMBO_SALARY,219,117,99,75,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DEGREE,371,117,99,84,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DEPTMENT,68,141,100,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TECHNICAL,219,141,100,71,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_JOB,371,141,100,86,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_OPHONE,68,165,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MPHONE,219,165,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EMAIL,371,165,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UNIVERSITY,68,189,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SUBJECT,219,189,100,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER_GRADUAGE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,371,189,100,15
+    EDITTEXT        IDC_EDIT_ADDRESS,68,213,403,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_HFAMILYMEMBER DIALOG DISCARDABLE  0, 0, 487, 249
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_FAMILY,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,473,114
+    LTEXT           "姓名：",IDC_STATIC,23,139,25,8
+    LTEXT           "生日：",IDC_STATIC,23,163,25,8
+    LTEXT           "职务：",IDC_STATIC,23,189,25,8
+    LTEXT           "身份证号：",IDC_STATIC,163,139,41,8
+    LTEXT           "工作单位：",IDC_STATIC,163,163,41,8
+    LTEXT           "政治面貌：",IDC_STATIC,163,189,41,8
+    LTEXT           "与教工关系：",IDC_STATIC,317,139,49,8
+    LTEXT           "联系电话：",IDC_STATIC,317,163,41,8
+    LTEXT           "文化程度：",IDC_STATIC,317,189,41,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_BIRTH,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,51,160,100,15
+    EDITTEXT        IDC_EDIT_NAME,51,137,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CID,208,137,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RELATION,371,137,96,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMPANY,208,161,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PHONE,364,161,104,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DUTY,51,187,100,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_POLITICAL,208,187,100,55,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_EDUCATION,364,187,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,79,217,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,167,217,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,253,217,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,343,217,50,14
+END
+
+IDD_DIALOG_HWORKEXPERIENCE DIALOG DISCARDABLE  0, 0, 488, 248
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_WORKEXPERIENCE,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,
+                    474,116
+    LTEXT           "开始时间：",IDC_STATIC,21,141,41,8
+    LTEXT           "所属部门：",IDC_STATIC,21,167,41,8
+    LTEXT           "学    历：",IDC_STATIC,21,193,41,8
+    LTEXT           "结束时间：",IDC_STATIC,171,141,41,8
+    LTEXT           "职    务：",IDC_STATIC,171,167,41,8
+    LTEXT           "所在地域：",IDC_STATIC,171,193,41,8
+    LTEXT           "工作单位：",IDC_STATIC,324,141,41,8
+    LTEXT           "职    称：",IDC_STATIC,324,167,41,8
+    LTEXT           "证 明 人：",IDC_STATIC,324,193,41,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_BEGIN,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,64,138,100,15
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER_END,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,216,138,100,15
+    EDITTEXT        IDC_EDIT_COMPANY,369,139,101,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEPARTMENT,64,165,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DUTY,216,165,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TECHNICAL,369,165,101,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_EDUCATION,64,191,99,50,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_LOCATION,216,191,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PROVER,369,191,100,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,90,217,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,177,217,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,263,217,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,351,217,50,14
+END
+
+IDD_DIALOG_HREWARDRECORD DIALOG DISCARDABLE  0, 0, 488, 249
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_REWARDRECORD,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,474,116
+    LTEXT           "奖励名称：",IDC_STATIC,24,141,41,8
+    LTEXT           "奖励级别：",IDC_STATIC,24,167,41,8
+    LTEXT           "奖励门类：",IDC_STATIC,24,191,41,8
+    LTEXT           "奖励等级：",IDC_STATIC,250,141,41,8
+    LTEXT           "授奖单位：",IDC_STATIC,250,167,41,8
+    LTEXT           "奖励时间：",IDC_STATIC,250,191,41,8
+    EDITTEXT        IDC_EDIT_TITLE,69,139,166,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SORT,295,139,167,85,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LEVEL,69,165,167,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_UNIT,295,165,167,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_CATEGORY,69,189,167,71,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,295,188,168,15
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,90,217,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,175,217,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,261,217,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,345,217,50,14
+END
+
+IDD_DIALOG_HDISCIPLINEPUNISH DIALOG DISCARDABLE  0, 0, 489, 253
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_DISCIPLINEPUNISH,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,
+                    475,116
+    LTEXT           "违纪种类：",IDC_STATIC,23,137,41,8
+    LTEXT           "违纪原因：",IDC_STATIC,23,160,41,8
+    LTEXT           "解除时间：",IDC_STATIC,23,183,41,8
+    LTEXT           "处 分 期：",IDC_STATIC,251,137,41,8
+    LTEXT           "处罚时间：",IDC_STATIC,251,160,41,8
+    LTEXT           "解除原因：",IDC_STATIC,251,182,41,8
+    LTEXT           "处罚批准单位：",IDC_STATIC,23,205,57,8
+    COMBOBOX        IDC_COMBO_SORT,68,135,165,67,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PERIOD,297,135,165,71,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PREASON,68,157,165,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_PDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,297,157,166,15
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER_DDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,68,179,166,15
+    EDITTEXT        IDC_EDIT_DREASON,297,179,166,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UNIT1,85,203,378,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,95,225,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,180,225,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,261,225,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,343,225,50,14
+END
+
+IDD_DIALOG_HPAPER DIALOG DISCARDABLE  0, 0, 488, 249
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_PAPER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,474,116
+    LTEXT           "题目：",IDC_STATIC,23,139,25,8
+    LTEXT           "发表时间：",IDC_STATIC,23,165,41,8
+    LTEXT           "页    码：",IDC_STATIC,23,191,41,8
+    LTEXT           "作者排名：",IDC_STATIC,171,139,41,8
+    LTEXT           "刊物名称：",IDC_STATIC,331,139,41,8
+    LTEXT           "出 版 年：",IDC_STATIC,137,165,41,8
+    LTEXT           "卷：",IDC_STATIC,244,165,17,8
+    LTEXT           "期：",IDC_STATIC,359,165,17,8
+    LTEXT           "刊物级别：",IDC_STATIC,137,191,41,8
+    LTEXT           "文献类型：",IDC_STATIC,244,191,41,8
+    LTEXT           "检索类型：",IDC_STATIC,359,191,41,8
+    EDITTEXT        IDC_EDIT_TITLE,53,137,108,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_RANK,215,137,106,62,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PUBLICATION,376,137,95,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_PUBTIME,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,65,162,65,15
+    EDITTEXT        IDC_EDIT_PUBTIME,182,163,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VOLUME,286,163,62,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ISSUE,403,163,67,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PAGE,65,188,65,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_LEVEL,182,188,55,75,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TYPE,286,188,64,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_INDEX,403,188,68,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,89,219,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,171,219,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,257,219,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,341,219,50,14
+END
+
+IDD_DIALOG_HPROJECT DIALOG DISCARDABLE  0, 0, 492, 253
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_PROJECT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,478,115
+    LTEXT           "题目：",IDC_STATIC,19,135,25,8
+    LTEXT           "类  型：",IDC_STATIC,221,135,33,8
+    LTEXT           "类别：",IDC_STATIC,311,135,25,8
+    LTEXT           "级别：",IDC_STATIC,396,135,25,8
+    LTEXT           "资助类别：",IDC_STATIC,19,159,41,8
+    LTEXT           "状态：",IDC_STATIC,131,159,25,8
+    LTEXT           "主持人：",IDC_STATIC,221,159,33,8
+    LTEXT           "排名：",IDC_STATIC,19,183,25,8
+    LTEXT           "第一完成单位：",IDC_STATIC,311,159,57,8
+    LTEXT           "下达时间：",IDC_STATIC,115,183,41,8
+    LTEXT           "下达单位：",IDC_STATIC,236,183,41,8
+    LTEXT           "下达经费：",IDC_STATIC,346,183,41,8
+    LTEXT           "研究期限：",IDC_STATIC,19,206,41,8
+    LTEXT           "开始时间：",IDC_STATIC,155,206,41,8
+    LTEXT           "结束时间：",IDC_STATIC,324,206,41,8
+    EDITTEXT        IDC_EDIT_TITLE,51,133,157,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_TYPE,255,133,48,62,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SORT,340,133,48,50,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LEVEL,426,133,48,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_RATE,65,157,56,76,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_STATE,159,157,53,58,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOST,255,157,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FIRST,374,157,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RANK,49,181,57,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_RELEASE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,159,180,68,15
+    EDITTEXT        IDC_EDIT_UNIT2,281,181,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COST,393,181,81,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_LIMIT,63,203,83,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER_BEGIN,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,200,203,112,15
+    CONTROL         "DateTimePicker3",IDC_DATETIMEPICKER_END,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,370,203,105,15
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,89,227,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,175,227,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,262,227,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,348,227,50,14
+END
+
+IDD_DIALOG_HTECHNICALACCESS DIALOG DISCARDABLE  0, 0, 488, 249
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_TECHNICALACCESS,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,
+                    474,115
+    LTEXT           "专业技术资格名称：",IDC_STATIC,20,137,73,8
+    LTEXT           "取得时间：",IDC_STATIC,20,163,41,8
+    LTEXT           "聘用开始时间：",IDC_STATIC,20,189,57,8
+    LTEXT           "评定方式：",IDC_STATIC,177,137,41,8
+    LTEXT           "评定单位：",IDC_STATIC,315,137,41,8
+    LTEXT           "聘用专业技术职务：",IDC_STATIC,177,163,73,8
+    LTEXT           "聘用单位：",IDC_STATIC,329,163,41,8
+    LTEXT           "聘用结束时间：",IDC_STATIC,253,189,57,8
+    EDITTEXT        IDC_EDIT_TITLE,95,135,74,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_MODE,223,135,83,53,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_UNIT,359,135,111,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_GDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,65,160,105,15
+    EDITTEXT        IDC_EDIT_HIRE,253,161,68,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EMPLOY,373,161,97,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER_BDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,82,186,144,15
+    CONTROL         "DateTimePicker3",IDC_DATETIMEPICKER_EDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,315,186,155,15
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,91,217,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,172,217,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,251,217,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,332,217,50,14
+END
+
+IDD_DIALOG_HACADEMICEDUCATION DIALOG DISCARDABLE  0, 0, 489, 248
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_ACADEMICEDUCATION,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,
+                    475,116
+    LTEXT           "开始时间：",IDC_STATIC,24,138,41,8
+    LTEXT           "所在院系：",IDC_STATIC,24,165,41,8
+    LTEXT           "学    位：",IDC_STATIC,24,193,41,8
+    LTEXT           "结束时间：",IDC_STATIC,175,138,41,8
+    LTEXT           "所学专业：",IDC_STATIC,175,165,41,8
+    LTEXT           "毕业院校：",IDC_STATIC,327,138,41,8
+    LTEXT           "学    历：",IDC_STATIC,327,165,41,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_BDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,67,135,100,15
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER_EDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,218,135,100,15
+    EDITTEXT        IDC_EDIT_UNIVERSITY,371,135,101,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEPARTMENT,67,163,100,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAJOR,218,163,100,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_DIPLOMA,371,163,101,59,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DEGREE,67,191,102,61,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,91,215,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,175,215,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,258,215,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,337,215,50,14
+END
+
+IDD_DIALOG_HCONTINUEEDUCATION DIALOG DISCARDABLE  0, 0, 488, 248
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_CONTINUEEDUCATION,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,
+                    474,116
+    LTEXT           "教育方式：",IDC_STATIC,20,138,41,8
+    LTEXT           "教育效果：",IDC_STATIC,20,165,41,8
+    LTEXT           "培训地点：",IDC_STATIC,20,191,41,8
+    LTEXT           "开始时间：",IDC_STATIC,179,138,41,8
+    LTEXT           "教育内容：",IDC_STATIC,179,165,41,8
+    LTEXT           "培训经费：",IDC_STATIC,179,191,41,8
+    LTEXT           "结束时间：",IDC_STATIC,329,138,41,8
+    LTEXT           "培训单位：",IDC_STATIC,329,165,41,8
+    LTEXT           "培训学时：",IDC_STATIC,329,191,41,8
+    COMBOBOX        IDC_COMBO_MODE,64,136,106,53,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_BDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,221,135,100,15
+    CONTROL         "DateTimePicker2",IDC_DATETIMEPICKER_EDATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,373,135,100,15
+    COMBOBOX        IDC_COMBO_EFFECT,64,163,106,63,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTENT,221,163,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UNIT,373,163,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOCATION,64,189,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COST,221,189,99,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOUR,373,189,99,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,91,216,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,171,216,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,251,216,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,331,216,50,14
+END
+
+IDD_DIALOG_HCLASSTEACHING DIALOG DISCARDABLE  0, 0, 488, 248
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_CLASSTEACHING,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,
+                    474,116
+    LTEXT           "年    度：",IDC_STATIC,21,138,41,8
+    LTEXT           "课程性质：",IDC_STATIC,21,164,41,8
+    LTEXT           "授课对象：",IDC_STATIC,21,191,41,8
+    LTEXT           "学    期：",IDC_STATIC,175,138,41,8
+    LTEXT           "课程类别：",IDC_STATIC,175,164,41,8
+    LTEXT           "学    时：",IDC_STATIC,175,191,41,8
+    LTEXT           "课 程 名：",IDC_STATIC,323,138,41,8
+    LTEXT           "授课班级：",IDC_STATIC,323,164,41,8
+    LTEXT           "地    点：",IDC_STATIC,323,191,41,8
+    EDITTEXT        IDC_EDIT_ANNUAL,65,136,101,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SEMESTER,219,136,97,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_COURSE,365,136,105,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SORT,65,161,102,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LEVEL,219,161,97,58,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CLASS,365,161,105,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_OBJECT,65,189,102,59,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HOUR,219,189,96,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOCATION,365,189,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,91,218,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,175,218,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,259,218,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,339,218,50,14
+END
+
+IDD_DIALOG_BROWSE DIALOGEX 0, 0, 626, 371
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "人事档案浏览"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,562,337,50,14
+    GROUPBOX        "查询",IDC_STATIC,7,7,302,40
+    GROUPBOX        "当前记录",IDC_STATIC,316,7,303,40
+    LTEXT           "查询条件：",IDC_STATIC,13,25,41,8
+    LTEXT           "查询内容：",IDC_STATIC,131,25,41,8
+    COMBOBOX        IDC_COMBO_CONDITION,56,23,69,99,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CONTENT,173,23,70,82,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,251,23,50,14
+    LTEXT           "教工姓名：",IDC_STATIC,321,25,41,8
+    LTEXT           "教工编号：",IDC_STATIC,463,25,41,8
+    EDITTEXT        IDC_EDIT_NAME,363,23,91,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CODE,506,23,103,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "List1",IDC_LIST_BROWSE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,55,119,270,
+                    WS_EX_DLGMODALFRAME | WS_EX_ACCEPTFILES | 
+                    WS_EX_CLIENTEDGE
+    CONTROL         "Tab1",IDC_TAB_BROWSE,"SysTabControl32",0x0,132,55,487,
+                    270
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,47,337,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,117,337,50,14
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,188,337,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,259,337,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,330,337,50,14
+END
+
+IDD_DIALOG_HSEARCH DIALOG DISCARDABLE  0, 0, 576, 311
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "人事档案查询"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,497,88,50,28
+    GROUPBOX        "教工信息",IDC_STATIC,7,7,466,92
+    GROUPBOX        "单位信息",IDC_STATIC,7,105,465,40
+    LTEXT           "姓    名：",IDC_STATIC,17,27,41,8
+    LTEXT           "性    别：",IDC_STATIC,151,27,41,8
+    LTEXT           "年龄：",IDC_STATIC,252,27,25,8
+    LTEXT           "民族：",IDC_STATIC,359,27,25,8
+    LTEXT           "籍    贯：",IDC_STATIC,17,53,41,8
+    LTEXT           "婚姻状况：",IDC_STATIC,151,53,41,8
+    LTEXT           "职称：",IDC_STATIC,252,53,25,8
+    LTEXT           "职务：",IDC_STATIC,359,53,25,8
+    LTEXT           "文化程度：",IDC_STATIC,17,78,41,8
+    LTEXT           "政治面貌：",IDC_STATIC,203,78,41,8
+    EDITTEXT        IDC_EDIT_NAME,61,25,80,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SEX,196,25,48,50,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_AGE,279,25,71,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_NATION,386,25,77,58,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_NATIVE,61,50,80,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_MARRIAGE,196,51,48,48,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TECHNICAL,279,51,72,49,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POST,386,51,77,56,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_EDUCATION,61,75,115,69,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POLITICAL,249,75,118,69,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "院系部门：",IDC_STATIC,17,123,41,8
+    LTEXT           "教工岗位：",IDC_STATIC,203,123,41,8
+    COMBOBOX        IDC_COMBO_UNIT,61,121,116,66,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_POSITION,249,121,118,68,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST_SEARCH,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,7,154,562,150
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,497,35,50,29
+END
+
+IDD_DIALOG_HSTATISTICS DIALOG DISCARDABLE  0, 0, 452, 281
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "人事档案统计"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_SELECTION,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSCROLL | 
+                    WS_BORDER | WS_TABSTOP,7,7,152,267
+    CONTROL         "List2",IDC_RESULT,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,168,7,277,267
+END
+
+IDD_DIALOG_NOTES DIALOG DISCARDABLE  0, 0, 578, 287
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "记事本"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,412,254,50,14,WS_DISABLED
+    PUSHBUTTON      "退出",IDCANCEL,201,254,50,14
+    PUSHBUTTON      "新建",IDC_BUTTON_ADD,13,254,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,75,254,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,137,254,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,489,254,50,14,WS_DISABLED
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,515,23,50,14
+    GROUPBOX        "查询",IDC_STATIC,248,7,323,40
+    GROUPBOX        "事件概要",IDC_STATIC,248,53,323,83
+    GROUPBOX        "事件内容",IDC_STATIC,248,141,323,103
+    LTEXT           "查询条件：",IDC_STATIC,255,26,41,8
+    LTEXT           "查询内容：",IDC_STATIC,389,26,41,8
+    COMBOBOX        IDC_COMBO_CONDITION,298,23,84,64,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTENT,431,23,77,14,ES_AUTOHSCROLL
+    LTEXT           "记 录 人：",IDC_STATIC,255,71,41,8
+    LTEXT           "记录人所在单位：",IDC_STATIC,399,71,65,8
+    LTEXT           "记录日期：",IDC_STATIC,255,95,41,8
+    LTEXT           "事件类型：",IDC_STATIC,399,95,41,8
+    LTEXT           "事件标题：",IDC_STATIC,256,118,41,8
+    EDITTEXT        IDC_EDIT_WRITER,299,69,92,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UNIT1,466,69,97,14,ES_AUTOHSCROLL
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,299,92,93,15
+    COMBOBOX        IDC_COMBO_TYPE,443,93,119,63,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TITLE,299,115,262,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONTEXT,257,155,304,80,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST_NOTES,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,229,236
+END
+
+IDD_DIALOG_COMMUNICATIONTHIN DIALOG DISCARDABLE  0, 0, 563, 289
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "通信簿"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,476,261,50,14
+    CONTROL         "List1",IDC_LIST_THIN,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,549,187
+    PUSHBUTTON      "查看",IDC_BUTTON_VIEW,41,261,50,14
+    PUSHBUTTON      "新建",IDC_BUTTON_ADD,110,261,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,182,261,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,253,261,50,14
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,497,223,50,14
+    GROUPBOX        "查询",IDC_STATIC,7,207,549,40
+    LTEXT           "查询条件：",IDC_STATIC,13,226,41,8
+    LTEXT           "查询内容：",IDC_STATIC,255,226,41,8
+    COMBOBOX        IDC_COMBO_CONDITION,55,224,191,91,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_CONTENT,299,224,189,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_NEWCTHIN DIALOG DISCARDABLE  0, 0, 354, 241
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "通信簿信息输入"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,86,214,50,14
+    PUSHBUTTON      "取消",IDCANCEL,207,214,50,14
+    GROUPBOX        "个人通信信息",IDC_STATIC,7,7,340,136
+    GROUPBOX        "备注",IDC_STATIC,7,149,340,55
+    LTEXT           "姓名：",IDC_STATIC,17,26,25,8
+    LTEXT           "家庭电话：",IDC_STATIC,17,50,41,8
+    LTEXT           "手机：",IDC_STATIC,17,76,25,8
+    LTEXT           "QQ：",IDC_STATIC,17,100,17,8
+    LTEXT           "电子邮箱：",IDC_STATIC,17,124,41,8
+    LTEXT           "性别：",IDC_STATIC,179,26,25,8
+    LTEXT           "办公电话：",IDC_STATIC,179,50,41,8
+    LTEXT           "短号：",IDC_STATIC,179,76,25,8
+    LTEXT           "微信号：",IDC_STATIC,179,100,33,8
+    LTEXT           "单位：",IDC_STATIC,179,124,25,8
+    EDITTEXT        IDC_EDIT_NAME,43,24,128,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FPHONE,61,48,110,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SEX,207,24,129,62,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_OPHONE,223,48,113,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MPHONE,43,73,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHORT,207,73,129,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QQ,43,97,127,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WECHAT,216,98,120,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EMAIL,61,121,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UNIT1,207,121,129,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REMARK,17,162,320,35,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_MEETINGRECORD DIALOG DISCARDABLE  0, 0, 405, 401
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "会议纪要"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,255,180,50,14,WS_DISABLED
+    PUSHBUTTON      "退出",IDCANCEL,215,242,50,14
+    PUSHBUTTON      "新建",IDC_BUTTON_ADD,25,180,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELETE,102,180,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON_UPDATE,179,180,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,329,180,50,14,WS_DISABLED
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,124,242,50,14
+    GROUPBOX        "添加会议纪要",IDC_STATIC,7,7,391,194
+    GROUPBOX        "查询",IDC_STATIC,7,205,391,59
+    LTEXT           "会议时间：",IDC_STATIC,15,25,41,8
+    LTEXT           "会议地点：",IDC_STATIC,202,25,41,8
+    LTEXT           "会议类别：",IDC_STATIC,15,49,41,8
+    LTEXT           "会议主题：",IDC_STATIC,202,49,41,8
+    LTEXT           "举办单位：",IDC_STATIC,15,73,41,8
+    LTEXT           "参与单位：",IDC_STATIC,202,73,41,8
+    LTEXT           "主 持 人：",IDC_STATIC,15,97,41,8
+    LTEXT           "记 录 人：",IDC_STATIC,202,97,41,8
+    LTEXT           "会议内容：",IDC_STATIC,15,123,41,8
+    LTEXT           "备    注：",IDC_STATIC,15,160,41,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER_DATE,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    DTS_APPCANPARSE | WS_TABSTOP,58,22,136,15
+    EDITTEXT        IDC_EDIT_LOCATION,246,23,142,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SORT,58,47,135,125,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SUBJECT,246,47,142,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOSTUNIT,58,71,135,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PARTICIPATEUNIT,246,71,142,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HOST,58,95,135,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WRITER1,246,95,142,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CONTENT,58,121,330,28,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REMARK,58,157,329,14,ES_AUTOHSCROLL
+    LTEXT           "查询条件：",IDC_STATIC,15,222,41,8
+    LTEXT           "查询内容：",IDC_STATIC,202,222,41,8
+    COMBOBOX        IDC_COMBO_CONDITION,58,219,136,80,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_DETAILS,246,219,142,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST_MEETING,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,271,391,123
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Database Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Database\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Database.EXE\0"
+            VALUE "ProductName", "Database 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DIALOG_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_USERSETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIALOG_COMMON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_NATIONINFORMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_DIALOG_POSITIONINFORMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_DIALOG_EDUCATIONDEGREE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DIALOG_POLITICALSTATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_DIALOG_DEPARTMENTSECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DIALOG_WAGELEVEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_DIALOG_TECHNICALPOST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DIALOG_ADMINISTRATIVEPOST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_DIALOG_DEPARTMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 350
+    END
+
+    IDD_DIALOG_SECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 350
+    END
+
+    IDD_DIALOG_AUXILIARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 352
+    END
+
+    IDD_DIALOG_APPENDANT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 352
+    END
+
+    IDD_DIALOG_FULLTIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 350
+    END
+
+    IDD_HUMAN_HBASEARCHIVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 480
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_DIALOG_HFAMILYMEMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 480
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DIALOG_HWORKEXPERIENCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_DIALOG_HREWARDRECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DIALOG_HDISCIPLINEPUNISH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 482
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_DIALOG_HPAPER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DIALOG_HPROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 485
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_DIALOG_HTECHNICALACCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DIALOG_HACADEMICEDUCATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 482
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_DIALOG_HCONTINUEEDUCATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_DIALOG_HCLASSTEACHING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_DIALOG_BROWSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 619
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_DIALOG_HSEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 569
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_DIALOG_HSTATISTICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 445
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_DIALOG_NOTES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 571
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 280
+    END
+
+    IDD_DIALOG_COMMUNICATIONTHIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 556
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    IDD_DIALOG_NEWCTHIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_DIALOG_MEETINGRECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 398
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_DEPARTMENT DLGINIT
+BEGIN
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xbad4, 0xb5cf, 0xe0b1, 0xebc2, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xbad4, 0xb5cf, 0xfbc3, 0xc6b3, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xbad4, 0xb5cf, 0xecc1, 0xbcb5, 0xe9b2, 0xafd1, "\000" 
+    0
+END
+
+IDD_DIALOG_SECTION DLGINIT
+BEGIN
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xbfb2, 0xc5c3, 0xe0b1, 0xc5ba, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xbfb2, 0xc5c3, 0xfbc3, 0xc6b3, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xbfb2, 0xc5c3, 0xecc1, 0xbcb5, 0xe9b2, 0xafd1, "\000" 
+    0
+END
+
+IDD_DIALOG_AUXILIARY DLGINIT
+BEGIN
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xbfb2, 0xc5c3, 0xe0b1, 0xc5ba, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xbfb2, 0xc5c3, 0xfbc3, 0xc6b3, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xbfb2, 0xc5c3, 0xecc1, 0xbcb5, 0xe9b2, 0xafd1, "\000" 
+    0
+END
+
+IDD_DIALOG_APPENDANT DLGINIT
+BEGIN
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xa5b5, 0xbbce, 0xe0b1, 0xc5ba, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xa5b5, 0xbbce, 0xfbc3, 0xc6b3, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xa5b5, 0xbbce, 0xecc1, 0xbcb5, 0xe9b2, 0xafd1, "\000" 
+    0
+END
+
+IDD_DIALOG_FULLTIME DLGINIT
+BEGIN
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xfabb, 0xb9b9, 0xe0b1, 0xebc2, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xfabb, 0xb9b9, 0xfbc3, 0xc6b3, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xfabb, 0xb9b9, 0xecc1, 0xbcb5, 0xe9b2, 0xafd1, "\000" 
+    0
+END
+
+IDD_HUMAN_HBASEARCHIVE DLGINIT
+BEGIN
+    IDC_COMBO_SEX, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_COMBO_SEX, 0x403, 3, 0
+0xaec5, "\000" 
+    IDC_COMBO_MARRYIAGE, 0x403, 5, 0
+0xb4ce, 0xe9bb, "\000" 
+    IDC_COMBO_MARRYIAGE, 0x403, 5, 0
+0xd1d2, 0xe9bb, "\000" 
+    IDC_COMBO_PARTY, 0x403, 7, 0
+0xb2b9, 0xfab2, 0xb3b5, "\000" 
+    IDC_COMBO_PARTY, 0x403, 7, 0
+0xfab9, 0xf1c3, 0xb3b5, "\000" 
+    IDC_COMBO_PARTY, 0x403, 7, 0
+0xa9c5, 0xa4b9, 0xb3b5, "\000" 
+    IDC_COMBO_PARTY, 0x403, 3, 0
+0xdece, "\000" 
+    IDC_COMBO_RACE, 0x403, 3, 0
+0xbaba, "\000" 
+    IDC_COMBO_RACE, 0x403, 5, 0
+0xc9c3, 0xc5b9, "\000" 
+    IDC_COMBO_RACE, 0x403, 3, 0
+0xd8bb, "\000" 
+    IDC_COMBO_RACE, 0x403, 3, 0
+0xd8b2, "\000" 
+    IDC_COMBO_POST, 0x403, 9, 0
+0xd0d0, 0xfed5, 0xc9b8, 0xbfb2, "\000" 
+    IDC_COMBO_POST, 0x403, 9, 0
+0xa8d7, 0xcec8, 0xccbd, 0xa6ca, "\000" 
+    IDC_COMBO_POST, 0x403, 5, 0
+0xa4b9, 0xdac7, "\000" 
+    IDC_COMBO_POST, 0x403, 7, 0
+0xd9c1, 0xb1ca, 0xa4b9, "\000" 
+    IDC_COMBO_POST, 0x403, 11, 0
+0xebc0, 0xcbcd, 0xddd0, 0xc9b8, 0xbfb2, "\000" 
+    IDC_COMBO_POST, 0x403, 11, 0
+0xebc0, 0xcbcd, 0xddd0, 0xa4b9, 0xcbc8, "\000" 
+    IDC_COMBO_POST, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    IDC_COMBO_SALARY, 0x403, 9, 0
+0xccbd, 0xdaca, 0xfeb6, 0xb6bc, "\000" 
+    IDC_COMBO_SALARY, 0x403, 11, 0
+0xb1b8, 0xccbd, 0xdaca, 0xf9c1, 0xb6bc, "\000" 
+    IDC_COMBO_SALARY, 0x403, 9, 0
+0xb2bd, 0xa6ca, 0xcbb0, 0xb6bc, "\000" 
+    IDC_COMBO_SALARY, 0x403, 11, 0
+0xfad6, 0xccbd, 0xaeca, 0xfeb6, 0xb6bc, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xa9b2, 0xbfca, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xb6cb, 0xbfca, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xbeb1, 0xc6bf, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xa8d7, 0xc6bf, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xdfb8, 0xd0d6, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xf5b3, 0xd0d6, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xa1d0, 0xa7d1, "\000" 
+    IDC_COMBO_TECHNICAL, 0x403, 5, 0
+0xccbd, 0xdaca, "\000" 
+    IDC_COMBO_TECHNICAL, 0x403, 7, 0
+0xa4b9, 0xccb3, 0xa6ca, "\000" 
+    IDC_COMBO_TECHNICAL, 0x403, 7, 0
+0xb1b8, 0xccbd, 0xdaca, "\000" 
+    IDC_COMBO_TECHNICAL, 0x403, 7, 0
+0xd0d1, 0xbfbe, 0xb1d4, "\000" 
+    IDC_COMBO_TECHNICAL, 0x403, 3, 0
+0xdece, "\000" 
+    IDC_COMBO_JOB, 0x403, 5, 0
+0xa6b4, 0xa4b3, "\000" 
+    IDC_COMBO_JOB, 0x403, 5, 0
+0xc6bf, 0xa4b3, "\000" 
+    IDC_COMBO_JOB, 0x403, 7, 0
+0xb1b8, 0xa3d0, 0xa4b3, "\000" 
+    IDC_COMBO_JOB, 0x403, 7, 0
+0xb1b8, 0xa6b4, 0xa4b3, "\000" 
+    IDC_COMBO_JOB, 0x403, 3, 0
+0xdece, "\000" 
+    0
+END
+
+IDD_DIALOG_HFAMILYMEMBER DLGINIT
+BEGIN
+    IDC_COMBO_POLITICAL, 0x403, 7, 0
+0xb2b9, 0xfab2, 0xb3b5, "\000" 
+    IDC_COMBO_POLITICAL, 0x403, 7, 0
+0xfab9, 0xf1c3, 0xb3b5, "\000" 
+    IDC_COMBO_POLITICAL, 0x403, 7, 0
+0xf1c3, 0xf8bd, 0xb3b5, "\000" 
+    0
+END
+
+IDD_DIALOG_HWORKEXPERIENCE DLGINIT
+BEGIN
+    IDC_COMBO_EDUCATION, 0x403, 5, 0
+0xa9b2, 0xbfca, "\000" 
+    IDC_COMBO_EDUCATION, 0x403, 5, 0
+0xb6cb, 0xbfca, "\000" 
+    IDC_COMBO_EDUCATION, 0x403, 5, 0
+0xa7d1, 0xbfca, "\000" 
+    IDC_COMBO_EDUCATION, 0x403, 5, 0
+0xdfb8, 0xd0d6, "\000" 
+    0
+END
+
+IDD_DIALOG_HREWARDRECORD DLGINIT
+BEGIN
+    IDC_COMBO_SORT, 0x403, 7, 0
+0xfab9, 0xd2bc, 0xb6bc, "\000" 
+    IDC_COMBO_SORT, 0x403, 7, 0
+0xa1ca, 0xbfb2, 0xb6bc, "\000" 
+    IDC_COMBO_SORT, 0x403, 7, 0
+0xd0ca, 0xfccc, 0xb6bc, "\000" 
+    IDC_COMBO_SORT, 0x403, 5, 0
+0xa3d0, 0xb6bc, "\000" 
+    IDC_COMBO_SORT, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 7, 0
+0xd8cc, 0xc8b5, 0xb1bd, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 7, 0
+0xbbd2, 0xc8b5, 0xb1bd, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 7, 0
+0xfeb6, 0xc8b5, 0xb1bd, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 7, 0
+0xfdc8, 0xc8b5, 0xb1bd, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 7, 0
+0xc5d3, 0xe3d0, 0xb1bd, "\000" 
+    IDC_COMBO_CATEGORY, 0x403, 9, 0
+0xf9bb, 0xa1b4, 0xd0d1, 0xbfbe, "\000" 
+    IDC_COMBO_CATEGORY, 0x403, 9, 0
+0xbcbc, 0xf5ca, 0xaabf, 0xa2b7, "\000" 
+    IDC_COMBO_CATEGORY, 0x403, 9, 0
+0xe7c9, 0xe1bb, 0xabb9, 0xe6d2, "\000" 
+    IDC_COMBO_CATEGORY, 0x403, 9, 0
+0xfab9, 0xd2bc, 0xb2b0, 0xabc8, "\000" 
+    IDC_COMBO_CATEGORY, 0x403, 9, 0
+0xd8d6, 0xf3b4, 0xa4b9, 0xccb3, "\000" 
+    0
+END
+
+IDD_DIALOG_HDISCIPLINEPUNISH DLGINIT
+BEGIN
+    IDC_COMBO_SORT, 0x403, 9, 0
+0xa8cd, 0xa8b1, 0xfac5, 0xc0c6, "\000" 
+    IDC_COMBO_SORT, 0x403, 5, 0
+0xafbe, 0xe6b8, "\000" 
+    IDC_COMBO_SORT, 0x403, 5, 0
+0xc7bc, 0xfdb9, "\000" 
+    IDC_COMBO_SORT, 0x403, 7, 0
+0xc7bc, 0xf3b4, 0xfdb9, "\000" 
+    IDC_COMBO_SORT, 0x403, 5, 0
+0xaabf, 0xfdb3, "\000" 
+    IDC_COMBO_PERIOD, 0x403, 6, 0
+0xb833, 0xd4f6, 0x00c2, 
+    IDC_COMBO_PERIOD, 0x403, 6, 0
+0xb836, 0xd4f6, 0x00c2, 
+    IDC_COMBO_PERIOD, 0x403, 7, 0
+0x3231, 0xf6b8, 0xc2d4, "\000" 
+    IDC_COMBO_PERIOD, 0x403, 7, 0
+0x3831, 0xf6b8, 0xc2d4, "\000" 
+    0
+END
+
+IDD_DIALOG_HPAPER DLGINIT
+BEGIN
+    IDC_COMBO_RANK, 0x403, 5, 0
+0xc0b6, 0xa2c1, "\000" 
+    IDC_COMBO_RANK, 0x403, 5, 0
+0xdab5, 0xbbd2, "\000" 
+    IDC_COMBO_RANK, 0x403, 5, 0
+0xdab5, 0xfeb6, "\000" 
+    IDC_COMBO_RANK, 0x403, 5, 0
+0xdab5, 0xfdc8, "\000" 
+    IDC_COMBO_RANK, 0x403, 9, 0
+0xdab5, 0xfdc8, 0xaed6, 0xe2cd, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 8, 0
+0x4353, 0xc649, 0xbfda, 0x00af, 
+    IDC_COMBO_LEVEL, 0x403, 8, 0
+0x4353, 0xbb49, 0xd2e1, 0x00e9, 
+    IDC_COMBO_LEVEL, 0x403, 7, 0
+0x4945, 0xdac6, 0xafbf, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 7, 0
+0x4945, 0xe1bb, 0xe9d2, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 9, 0
+0x5349, 0x5054, 0xdac6, 0xafbf, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 9, 0
+0x5349, 0x5054, 0xe1bb, 0xe9d2, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 9, 0
+0x5343, 0x4443, 0xdac6, 0xafbf, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 9, 0
+0xcbba, 0xc4d0, 0xdac6, 0xafbf, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 9, 0
+0xd5c6, 0xa8cd, 0xdac6, 0xafbf, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    IDC_COMBO_TYPE, 0x403, 3, 0
+0x4143, "\000" 
+    IDC_COMBO_TYPE, 0x403, 3, 0
+0x414a, "\000" 
+    IDC_COMBO_INDEX, 0x403, 4, 0
+0x4353, 0x0049, 
+    IDC_COMBO_INDEX, 0x403, 3, 0
+0x4945, "\000" 
+    IDC_COMBO_INDEX, 0x403, 5, 0
+0x5349, 0x5054, "\000" 
+    0
+END
+
+IDD_DIALOG_HPROJECT DLGINIT
+BEGIN
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xc6bf, 0xd0d1, "\000" 
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xccbd, 0xd0d1, "\000" 
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xcbc8, 0xc5b2, "\000" 
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    IDC_COMBO_SORT, 0x403, 9, 0
+0xd4d7, 0xbbc8, 0xc6bf, 0xa7d1, "\000" 
+    IDC_COMBO_SORT, 0x403, 9, 0
+0xe7c9, 0xe1bb, 0xc6bf, 0xa7d1, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 7, 0
+0xfab9, 0xd2bc, 0xb6bc, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 7, 0
+0xa1ca, 0xbfb2, 0xb6bc, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 7, 0
+0xd0ca, 0xfccc, 0xb6bc, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 5, 0
+0xa3d0, 0xb6bc, "\000" 
+    IDC_COMBO_RATE, 0x403, 5, 0
+0xe6c3, 0xcfc9, "\000" 
+    IDC_COMBO_RATE, 0x403, 5, 0
+0xe0c7, 0xeac4, "\000" 
+    IDC_COMBO_RATE, 0x403, 5, 0
+0xbbd2, 0xe3b0, "\000" 
+    IDC_COMBO_RATE, 0x403, 9, 0
+0xd4d7, 0xc9d3, 0xeac9, 0xebc7, "\000" 
+    IDC_COMBO_RATE, 0x403, 5, 0
+0xd8d6, 0xe3b5, "\000" 
+    IDC_COMBO_RATE, 0x403, 5, 0
+0xd8d6, 0xf3b4, "\000" 
+    IDC_COMBO_STATE, 0x403, 5, 0
+0xdad4, 0xd0d1, "\000" 
+    IDC_COMBO_STATE, 0x403, 5, 0
+0xe1bd, 0xe2cc, "\000" 
+    IDC_COMBO_STATE, 0x403, 5, 0
+0xd3d1, 0xdac6, "\000" 
+    IDC_COMBO_LIMIT, 0x403, 4, 0
+0xc431, 0x00ea, 
+    IDC_COMBO_LIMIT, 0x403, 4, 0
+0xc432, 0x00ea, 
+    IDC_COMBO_LIMIT, 0x403, 4, 0
+0xc433, 0x00ea, 
+    IDC_COMBO_LIMIT, 0x403, 4, 0
+0xc434, 0x00ea, 
+    0
+END
+
+IDD_DIALOG_HTECHNICALACCESS DLGINIT
+BEGIN
+    IDC_COMBO_MODE, 0x403, 5, 0
+0xc0c6, 0xf3c9, "\000" 
+    IDC_COMBO_MODE, 0x403, 5, 0
+0xcfc8, 0xa8b6, "\000" 
+    0
+END
+
+IDD_DIALOG_HACADEMICEDUCATION DLGINIT
+BEGIN
+    IDC_COMBO_DIPLOMA, 0x403, 5, 0
+0xf3b4, 0xa7d1, "\000" 
+    IDC_COMBO_DIPLOMA, 0x403, 7, 0
+0xd0d1, 0xbfbe, 0xfac9, "\000" 
+    IDC_COMBO_DIPLOMA, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xbeb1, 0xc6bf, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xb6cb, 0xbfca, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xa9b2, 0xbfca, "\000" 
+    IDC_COMBO_DEGREE, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    0
+END
+
+IDD_DIALOG_HCONTINUEEDUCATION DLGINIT
+BEGIN
+    IDC_COMBO_MODE, 0x403, 5, 0
+0xdad4, 0xdfcf, "\000" 
+    IDC_COMBO_MODE, 0x403, 5, 0
+0xafbc, 0xd0d6, "\000" 
+    IDC_COMBO_EFFECT, 0x403, 5, 0
+0xc5d3, 0xe3d0, "\000" 
+    IDC_COMBO_EFFECT, 0x403, 5, 0
+0xbcc1, 0xc3ba, "\000" 
+    IDC_COMBO_EFFECT, 0x403, 5, 0
+0xb0bc, 0xf1b8, "\000" 
+    IDC_COMBO_EFFECT, 0x403, 7, 0
+0xbbb2, 0xcfba, 0xf1b8, "\000" 
+    0
+END
+
+IDD_DIALOG_HCLASSTEACHING DLGINIT
+BEGIN
+    IDC_COMBO_SEMESTER, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_SEMESTER, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_SORT, 0x403, 5, 0
+0xedc0, 0xdbc2, "\000" 
+    IDC_COMBO_SORT, 0x403, 5, 0
+0xb5ca, 0xe9d1, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 11, 0
+0xa8d7, 0xb5d2, 0xf9bb, 0xa1b4, 0xcebf, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 11, 0
+0xa8d7, 0xb5d2, 0xd8b1, 0xded0, 0xcebf, "\000" 
+    IDC_COMBO_LEVEL, 0x403, 11, 0
+0xa8d7, 0xb5d2, 0xa1d1, 0xded0, 0xcebf, "\000" 
+    IDC_COMBO_OBJECT, 0x403, 7, 0
+0xbeb1, 0xc6bf, 0xfac9, "\000" 
+    IDC_COMBO_OBJECT, 0x403, 7, 0
+0xa8d7, 0xc6bf, 0xfac9, "\000" 
+    IDC_COMBO_OBJECT, 0x403, 7, 0
+0xd0d1, 0xbfbe, 0xfac9, "\000" 
+    0
+END
+
+IDD_DIALOG_BROWSE DLGINIT
+BEGIN
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xbad4, 0xb5cf, 0xbfb2, 0xc5c3, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xd0d0, 0xfed5, 0xb0d6, 0xf1ce, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xb0d6, 0xc6b3, 0xe0c0, 0xf0b1, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xccbd, 0xa4b9, 0xdab8, 0xbbce, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xa4b9, 0xcad7, 0xc8b5, 0xb6bc, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xccbd, 0xa4b9, 0xd4d0, 0xf0b1, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xe9bb, 0xf6d2, 0xb4d7, 0xf6bf, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xf1c3, 0xe5d7, 0xc5d0, 0xa2cf, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xfed5, 0xced6, 0xe6c3, 0xb2c3, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xc4ce, 0xafbb, 0xccb3, 0xc8b6, 0xe9b2, 0xafd1, "\000" 
+    0
+END
+
+IDD_DIALOG_HSEARCH DLGINIT
+BEGIN
+    IDC_COMBO_SEX, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_COMBO_SEX, 0x403, 3, 0
+0xaec5, "\000" 
+    IDC_COMBO_MARRIAGE, 0x403, 5, 0
+0xb4ce, 0xe9bb, "\000" 
+    IDC_COMBO_MARRIAGE, 0x403, 5, 0
+0xd1d2, 0xe9bb, "\000" 
+    0
+END
+
+IDD_DIALOG_NOTES DLGINIT
+BEGIN
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xc2ca, 0xfebc, 0xe0c0, 0xcdd0, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xc2ca, 0xfebc, 0xeab1, 0xe2cc, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xd5c8, 0xc7bc, "\000" 
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xfdc0, 0xe1bb, "\000" 
+    IDC_COMBO_TYPE, 0x403, 9, 0
+0xa4b9, 0xf7d7, 0xcab1, 0xc7bc, "\000" 
+    0
+END
+
+IDD_DIALOG_COMMUNICATIONTHIN DLGINIT
+BEGIN
+    IDC_COMBO_CONDITION, 0x403, 11, 0
+0xb4b0, 0xd5d0, 0xfbc3, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 11, 0
+0xb4b0, 0xd4d0, 0xf0b1, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 11, 0
+0xb4b0, 0xd6ca, 0xfabb, 0xe9b2, 0xafd1, "\000" 
+    0
+END
+
+IDD_DIALOG_NEWCTHIN DLGINIT
+BEGIN
+    IDC_COMBO_SEX, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_COMBO_SEX, 0x403, 3, 0
+0xaec5, "\000" 
+    0
+END
+
+IDD_DIALOG_MEETINGRECORD DLGINIT
+BEGIN
+    IDC_COMBO_SORT, 0x403, 13, 0
+0xabc8, 0xa3d0, 0xccbd, 0xa4b9, 0xf3b4, 0xe1bb, "\000" 
+    IDC_COMBO_SORT, 0x403, 11, 0
+0xeecf, 0xbfc4, 0xd0d1, 0xd6cc, 0xe1bb, "\000" 
+    IDC_COMBO_SORT, 0x403, 7, 0
+0xf9d7, 0xb8cc, 0xe1bb, "\000" 
+    IDC_COMBO_SORT, 0x403, 9, 0
+0xa7d1, 0xf5ca, 0xb2bd, 0xf9d7, "\000" 
+    IDC_COMBO_SORT, 0x403, 7, 0
+0xe7b1, 0xdbc2, 0xe1bb, "\000" 
+    IDC_COMBO_SORT, 0x403, 9, 0
+0xf8cd, 0xe7c2, 0xe1bb, 0xe9d2, "\000" 
+    IDC_COMBO_SORT, 0x403, 9, 0
+0xa8d7, 0xe2cc, 0xa8b1, 0xe6b8, "\000" 
+    IDC_COMBO_SORT, 0x403, 9, 0
+0xa7d1, 0xfac9, 0xe0b0, 0xe1bb, "\000" 
+    IDC_COMBO_SORT, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xe1bb, 0xe9d2, 0xe0c0, 0xf0b1, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xe1bb, 0xe9d2, 0xf7d6, 0xe2cc, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xe1bb, 0xe9d2, 0xd8b5, 0xe3b5, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 15, 0
+0xb4b0, 0xd9be, 0xecb0, 0xa5b5, 0xbbce, 0xe9b2, 0xafd1, "\000" 
+    IDC_COMBO_CONDITION, 0x403, 13, 0
+0xb4b0, 0xf7d6, 0xd6b3, 0xcbc8, 0xe9b2, 0xafd1, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Database\n\nDataba\n\n\nDatabase.Document\nDataba Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Database"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+    ID_INDICATOR_CLOCK      "00:00:00"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SYS_USERSETTING      "更改用户密码和访问权限\n用户设置"
+    ID_SYS_DBBACKUP         "对数据库进行备份\n数据库备份"
+    ID_SYS_DBRECOVER        "从数据库备份中恢复数据\n数据库恢复"
+    ID_SYS_RELOAD           "切换用户\n重新登录"
+    ID_SYS_EXIT             "系统关闭\n退出系统"
+    ID_INF_NATION           "对教工民族信息进行管理\n民族信息"
+    ID_INF_POSITION         "对教工岗位信息进行管理\n教工岗位"
+    ID_INF_EDUCATION        "对教工文化程度进行管理\n文化程度"
+    ID_INF_POLITICAL        "对教工政治面貌进行管理\n政治面貌"
+    ID_INF_DEPT             "对教工院系部门进行管理\n院系部门"
+    ID_INF_WAGE             "对教工工资等级进行管理\n工资等级"
+    ID_INF_TECHNICAL        "对教工职称类别进行管理\n职称类别"
+    ID_INF_ADMIN            "对教工行政职务进行管理\n行政职务"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ORG_DEPT             "对教学院系信息教学管理\n教学院系"
+    ID_ORG_SECTION          "对管理部门信息进行管理\n管理部门"
+    ID_ORG_AUXILIARY        "对教辅部门信息进行管理\n教辅部门"
+    ID_ORG_APPENDANT        "对附属单位信息进行管理\n附属单位"
+    ID_ORG_FULLTIME         "对专职单位信息进行管理\n专职单位"
+    ID_HUMAN_BROWSE         "对教工人事信息进行浏览\n人事档案浏览"
+    ID_HUMAN_QUERY          "对教工人事信息进行查询\n人事档案查询"
+    ID_HUMAN_STATISTICS     "对教工人事信息进行统计\n人事档案统计"
+    ID_TOOL_NOTES           "对记事本进行管理\n记事本"
+    ID_TOOL_CONTACTS        "对通讯簿进行管理\n通讯簿"
+    ID_TOOL_MEETING         "对会议纪要进行管理\n会议纪要"
+    ID_HELP_ABOUT           "系统简介\n关于Database"
+    ID_HELP_DOCUMENT        "对高校人事信息数据库应用系统的用户使用进行说明\n帮助文档"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Database.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

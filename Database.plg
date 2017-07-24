@@ -1,0 +1,92 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Database - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPE0B2.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Database.pdb" /debug /machine:I386 /out:"Debug/Database.exe" /pdbtype:sept 
+".\Debug\AcademicEducationDlg.obj"
+".\Debug\AcademicEducationSet.obj"
+".\Debug\AddBaseInfoDlg.obj"
+".\Debug\AdministrativePostDlg.obj"
+".\Debug\AdministrativePostSet.obj"
+".\Debug\AppendantDlg.obj"
+".\Debug\AppendantSet.obj"
+".\Debug\AuxiliaryDlg.obj"
+".\Debug\AuxiliarySet.obj"
+".\Debug\BaseArchiveDlg.obj"
+".\Debug\BrowseDlg.obj"
+".\Debug\ClassTeachingDlg.obj"
+".\Debug\ClassTeachingSet.obj"
+".\Debug\ContactsDlg.obj"
+".\Debug\ContactsSet.obj"
+".\Debug\Container.obj"
+".\Debug\ContinueEducationDlg.obj"
+".\Debug\ContinueEducationSet.obj"
+".\Debug\Database.obj"
+".\Debug\DatabaseDoc.obj"
+".\Debug\DatabaseView.obj"
+".\Debug\DepartmentDlg.obj"
+".\Debug\DepartmentSectionDlg.obj"
+".\Debug\DepartmentSectionSet.obj"
+".\Debug\DepartmentSet.obj"
+".\Debug\DisciplinePunishDlg.obj"
+".\Debug\DisciplinePunishSet.obj"
+".\Debug\EducationDegreeDlg.obj"
+".\Debug\EducationDegreeSet.obj"
+".\Debug\FamilyMemberDlg.obj"
+".\Debug\FamilyMemberSet.obj"
+".\Debug\FulltimeDlg.obj"
+".\Debug\FulltimeSet.obj"
+".\Debug\LoginDlg.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MeetingRecordDlg.obj"
+".\Debug\MeetingRecordSet.obj"
+".\Debug\NationInformationDlg.obj"
+".\Debug\NationInformationSet.obj"
+".\Debug\NewCThinDlg.obj"
+".\Debug\NotesDlg.obj"
+".\Debug\NotesSet.obj"
+".\Debug\PaperDlg.obj"
+".\Debug\PaperSet1.obj"
+".\Debug\PoliticalStatusDlg.obj"
+".\Debug\PoliticalStatusSet.obj"
+".\Debug\PositionInformationDlg.obj"
+".\Debug\PositionInformationSet.obj"
+".\Debug\ProjectDlg.obj"
+".\Debug\ProjectSet.obj"
+".\Debug\RewardRecordDlg.obj"
+".\Debug\RewardRecordSet.obj"
+".\Debug\SearchDlg.obj"
+".\Debug\SectionDlg.obj"
+".\Debug\SectionSet.obj"
+".\Debug\StaffSet.obj"
+".\Debug\StatisticsDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TechnicalAccessDlg.obj"
+".\Debug\TechnicalAccessSet.obj"
+".\Debug\TechnicalPostDlg.obj"
+".\Debug\TechnicalPostSet.obj"
+".\Debug\User.obj"
+".\Debug\UserSettingDlg.obj"
+".\Debug\WageLevelDlg.obj"
+".\Debug\WageLevelSet.obj"
+".\Debug\WorkExperienceDlg.obj"
+".\Debug\WorkExperienceSet.obj"
+".\Debug\Database.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPE0B2.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+Database.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
