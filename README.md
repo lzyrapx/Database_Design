@@ -1,4 +1,7 @@
 
+这是LzyRapx小菜鸡大二时的数据库系统课程设计。
+以下是这个Database的简要介绍。
+
 ========================================================================
 
        MICROSOFT FOUNDATION CLASS LIBRARY : Database
